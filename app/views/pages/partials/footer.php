@@ -23,7 +23,7 @@
 
 
  
-<script src="https://www.paypal.com/sdk/js?client-id=AX7EiVX0nGcW0Y1fniAIVzeQ1rtjRJTeBj3YcqNfYMpAcxPCcOhw8H2bLmk7hyKa6TbYdeXNstyQCuPY&currency=USD&buyer-country=US"></script>
-	<script src="<?php echo URLROOT; ?>/js/main.js"></script>
+<!-- <script src="https://www.paypal.com/sdk/js?client-id=AX7EiVX0nGcW0Y1fniAIVzeQ1rtjRJTeBj3YcqNfYMpAcxPCcOhw8H2bLmk7hyKa6TbYdeXNstyQCuPY&currency=USD&buyer-country=US"></script>
+	<script src="<?php echo URLROOT; ?>/js/main.js"></script> -->
 </body>
 </html>
