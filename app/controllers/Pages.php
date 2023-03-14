@@ -1,16 +1,17 @@
 <?php 
-	class Users extends Controller {
+	class Pages extends Controller {
 		public function __construct() {
-			$this->model = $this->model('User');
+			$this->page = $this->model('Page');
 		}
 
 		public function index() {
 			if (!userLoggedIn()) {
 				
-				$projects = $this->model->getProjects();
+				$projects = $this->page->getProjects();
 
 				$data = [
 					'comics' => $projects,
+					'page' => 'index'
 				];
 
 				$this->view('pages/index',$data);
@@ -23,7 +24,7 @@
 			if (!userLoggedIn() && !is_null($name)) {
 
 				$project = str_replace("_"," ",$name);
-				$comic = $this->model->getComic($project);
+				$comic = $this->page->getComic($project);
 
 				$data = [
 					'comic' => $comic,
@@ -43,23 +44,23 @@
 				$email = $_POST['email'];
 				$pass = $_POST['password'];
 
-				$emailRegister = $this->model->findEmail($email);
+				$emailRegister = $this->page->findEmail($email);
 
 				// print_r($emailRegister);
 				// die();
 
 				if ($emailRegister) {
-					$logged = $this->model->login($email,$pass);
+					$logged = $this->page->login($email,$pass);
 
 					if ($logged) {
 						$this->createSession($logged);
 					} else {
 						$_SESSION['msg'] = 'Contaseña incorrecta';
-						redirect('users/login');
+						redirect('pages/login');
 					}
 				} else {
 					$_SESSION['msg'] = 'User no registrado';
-					redirect('users/login');
+					redirect('pages/login');
 				}
 
 				
@@ -90,7 +91,7 @@
 			unset($_SESSION['telefono']);
 
 			session_destroy();
-			redirect('users/login');
+			redirect('pages/login');
 		}
 	}
 ?>

@@ -12,6 +12,15 @@
 			return $projects;
 		}
 
+				public function getComic($name) {
+			$this->db->query('SELECT * FROM proyectos WHERE nombre = :name');
+			$this->db->bind(':name',$name);
+			$projects = $this->db->getSet();
+			return $projects;
+		}
+
+		
+
 		public function getSprints($id) {
 			$this->db->query('SELECT * FROM sprints WHERE project_id = :id');
 			$this->db->bind(':id', $id);

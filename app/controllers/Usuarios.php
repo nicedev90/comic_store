@@ -20,7 +20,24 @@
 			}
 		}
 
-		public function mi_galeria() {
+		public function galeria($name = null) {
+			if (userLoggedIn() && !is_null($name)) {
+
+				$project = str_replace("_"," ",$name);
+				$comic = $this->usuario->getComic($project);
+
+				$data = [
+					'comic' => $comic,
+				];
+
+				$this->view('usuario/galeria', $data);
+
+			} else {
+				$this->view('pages/login');
+			}
+		}
+
+		public function carrito() {
 			if (userLoggedIn()) {
 
 
@@ -29,7 +46,7 @@
 				// 	'sprints' => $sprints
 				// ];
 
-				$this->view('usuario/galeria');
+				$this->view('usuario/carrito');
 
 			} else {
 				$this->view('pages/login');

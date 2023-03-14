@@ -35,6 +35,7 @@ CREATE TABLE proyectos (
 	usuario_id INT NOT NULL,
 	nombre VARCHAR(50) NOT NULL,
 	genero VARCHAR(100) NOT NULL,
+	descripcion TEXT NOT NULL,
 	tipo VARCHAR(100) NOT NULL,
 	estado VARCHAR(40) NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
