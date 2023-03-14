@@ -594,38 +594,6 @@ video {
   top: 180px;
 }
 
-.top-20 {
-  top: 5rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-1\/2 {
-  bottom: 50%;
-}
-
-.bottom-1\/4 {
-  bottom: 25%;
-}
-
-.bottom-1\/3 {
-  bottom: 33.333333%;
-}
-
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.-bottom-20 {
-  bottom: -5rem;
-}
-
-.-bottom-10 {
-  bottom: -2.5rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -646,11 +614,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .mb-10 {
@@ -805,10 +768,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
 }
 
 .min-w-full {
@@ -971,11 +930,6 @@ video {
   border-top-width: 1px;
 }
 
-.border-cta {
-  --tw-border-opacity: 1;
-  border-color: hsl(31 91.5% 58.6% / var(--tw-border-opacity));
-}
-
 .border-dark {
   --tw-border-opacity: 1;
   border-color: hsl(260 71.8% 15.3% / var(--tw-border-opacity));
@@ -999,11 +953,6 @@ video {
 .bg-ctaDark {
   --tw-bg-opacity: 1;
   background-color: hsl(31 91.5% 46.6% / var(--tw-bg-opacity));
-}
-
-.bg-ctaLight {
-  --tw-bg-opacity: 1;
-  background-color: hsl(31 91.5% 66.6% / var(--tw-bg-opacity));
 }
 
 .bg-dark {
@@ -1041,74 +990,26 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
-}
-
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
-}
-
-.bg-opacity-60 {
-  --tw-bg-opacity: 0.6;
 }
 
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
 
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
 }
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.from-dark {
-  --tw-gradient-from: hsl(260,71.8%,15.3%);
-  --tw-gradient-to: hsl(260 71.8% 15.3% / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-cta {
-  --tw-gradient-from: hsl(31,91.5%,58.6%);
-  --tw-gradient-to: hsl(31 91.5% 58.6% / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-ctaDark {
   --tw-gradient-from: hsl(31,91.5%,46.6%);
   --tw-gradient-to: hsl(31 91.5% 46.6% / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-ctaLight {
-  --tw-gradient-from: hsl(31,91.5%,66.6%);
-  --tw-gradient-to: hsl(31 91.5% 66.6% / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-primary {
-  --tw-gradient-from: hsl(274,81.9%,61%);
-  --tw-gradient-to: hsl(274 81.9% 61% / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-cta {
-  --tw-gradient-to: hsl(31,91.5%,58.6%);
 }
 
 .object-cover {
@@ -1184,11 +1085,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 .pb-5 {
@@ -1276,22 +1172,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-80 {
-  opacity: 0.8;
-}
-
-.opacity-20 {
-  opacity: 0.2;
-}
-
-.opacity-90 {
-  opacity: 0.9;
-}
-
-.opacity-100 {
-  opacity: 1;
-}
-
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1306,14 +1186,14 @@ video {
 @font-face {
   font-family: "irish";
 
-  src: url('http://192.168.8.100/comic_store/css/fonts/IrishGrover-Regular.ttf') format('truetype');
+  /*  src: url('http://192.168.8.100/comic_store/css/fonts/IrishGrover-Regular.ttf') format('truetype');*/
 
-  /*  src: url('https://nicedev90.pro/comic_store/css/fonts/IrishGrover-Regular.ttf') format('truetype');*/
+  src: url('https://nicedev90.pro/comic_store/css/fonts/IrishGrover-Regular.ttf') format('truetype');
 }
 
 #login_wrapper {
-  background-image: url('http://192.168.8.100/comic_store/img/bg_login.webp');
-  /*	background-image: url('https://nicedev90.pro/comic_store/img/bg_login.webp');*/
+  /*	background-image: url('http://192.168.8.100/comic_store/img/bg_login.webp');*/
+  background-image: url('https://nicedev90.pro/comic_store/img/bg_login.webp');
   background-size: cover;
 }
 
@@ -1452,11 +1332,6 @@ video {
 .hover\:bg-cta:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(31 91.5% 58.6% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-ctaDark:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(31 91.5% 46.6% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-ctaLight:hover {
